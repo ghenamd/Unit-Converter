@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <ImageButton
+            android:id="@+id/volume"
+            style="@style/ImageButton"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/volume"
+            android:src="@drawable/pressed_volume"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/temp"
+            style="@style/ImageButton"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/temperature"
+            android:src="@drawable/pressed_temp"
+            app:layout_constraintEnd_toStartOf="@+id/area"
+            app:layout_constraintStart_toEndOf="@+id/volume"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/area"
+            style="@style/ImageButton"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/area"
+            android:src="@drawable/pressed_area"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/speed"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/ImageButton"
+            android:contentDescription="@string/speed"
+            android:src="@drawable/pressed_speed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volume" />
+
+        <ImageButton
+            android:id="@+id/mass"
+            style="@style/ImageButton"
+            android:src="@drawable/pressed_mass"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/mass"
+            app:layout_constraintEnd_toStartOf="@+id/time"
+            app:layout_constraintStart_toEndOf="@+id/speed"
+            app:layout_constraintTop_toBottomOf="@+id/temp" />
+
+        <ImageButton
+            android:id="@+id/time"
+           style="@style/ImageButton"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/pressed_time"
+            android:contentDescription="@string/time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/area" />
+
+        <ImageButton
+            android:id="@+id/fuel"
+            style="@style/ImageButton"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/pressed_fuel"
+            android:contentDescription="@string/fuel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/speed" />
+
+        <ImageButton
+            android:id="@+id/bar"
+           style="@style/ImageButton"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/pressed_bar"
+            android:contentDescription="@string/pressure"
+            app:layout_constraintEnd_toStartOf="@+id/power"
+            app:layout_constraintStart_toEndOf="@+id/fuel"
+            app:layout_constraintTop_toBottomOf="@+id/mass" />
+
+        <ImageButton
+            android:id="@+id/power"
+            style="@style/ImageButton"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/pressed_power"
+            android:contentDescription="@string/power"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+        <ImageButton
+            android:id="@+id/energy"
+            style="@style/ImageButton"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/pressed_energy"
+            android:contentDescription="@string/energy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fuel" />
+
+        <ImageButton
+            android:id="@+id/length"
+            style="@style/ImageButton"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/length"
+            android:src="@drawable/pressed_length"
+            app:layout_constraintEnd_toStartOf="@+id/power"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bar"
+            app:layout_constraintTop_toBottomOf="@+id/bar" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+

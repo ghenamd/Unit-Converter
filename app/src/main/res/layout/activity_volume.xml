@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/activityBackground"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".volume.VolumeActivity">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <com.zappcompany.unitconverter.customview.CustomEditText
+                style="@style/customEditText"
+                android:id="@+id/edit_text_milliliter"
+                />
+            <TextView
+                style="@style/activityTextView"
+                android:text="@string/milliliter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <com.zappcompany.unitconverter.customview.CustomEditText
+                style="@style/customEditText"
+                android:id="@+id/edit_text_liter" />
+
+            <TextView
+                style="@style/activityTextView"
+                android:text="@string/liter" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
