@@ -1,4 +1,4 @@
-package com.zappcompany.unitconverter.textwatcher;
+package com.zappcompany.unitconverter.volume.textwatcher;
 
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -6,21 +6,22 @@ import android.widget.EditText;
 
 import com.zappcompany.unitconverter.volume.VolumeCalculator;
 
-import java.util.List;
+import java.util.HashMap;
 
-public class CustomTextWatcher {
+import static com.zappcompany.unitconverter.volume.constants.VolumeConstants.LITER;
+import static com.zappcompany.unitconverter.volume.constants.VolumeConstants.MILLILITER;
 
-    private List<EditText> mTextList;
+public class CustomVolumeTextWatcher {
 
     private VolumeCalculator mVolumeCalculator;
 
-    public CustomTextWatcher(List<EditText> textList, VolumeCalculator volumeCalculator) {
-        mTextList = textList;
+    public CustomVolumeTextWatcher(VolumeCalculator volumeCalculator) {
+
         mVolumeCalculator = volumeCalculator;
     }
 
-    public void setValuesPerEditText() {
-        for (final EditText editText : mTextList) { //need to be final for custom behaviors
+    public void setValuesPerEditText(final HashMap<String, EditText> mHashMap) {
+        for (final EditText editText : mHashMap.values()) { //need to be final for custom behaviors
             editText.addTextChangedListener(new TextWatcher() {
                 @Override
                 public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -37,15 +38,15 @@ public class CustomTextWatcher {
                     //Apply general behavior for all editTexts
                     if (editable != null && editable.length() != 0) {
                         double value = Double.parseDouble(editable.toString());
-                        if (editText == mTextList.get(0)) {
+                        if (editText == mHashMap.get(MILLILITER)) {
                             //Apply custom behavior just for this editText
                             editText.removeTextChangedListener(this);
-                            mTextList.get(1).setText(mVolumeCalculator.calculateLiter(value));
+                            mHashMap.get(LITER).setText(mVolumeCalculator.calculateLiter(value));
                             editText.addTextChangedListener(this);
 
-                        }else if (editText == mTextList.get(1)){
+                        } else if (editText == mHashMap.get(LITER)) {
                             editText.removeTextChangedListener(this);
-                            mTextList.get(0).setText(mVolumeCalculator.calculateMilliliter(value));
+                            mHashMap.get(MILLILITER).setText(mVolumeCalculator.calculateMilliliter(value));
                             editText.addTextChangedListener(this);
                         }
                     }

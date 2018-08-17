@@ -13,7 +13,7 @@ import static com.zappcompany.unitconverter.volume.constants.VolumeConstants.LIT
 import static com.zappcompany.unitconverter.volume.constants.VolumeConstants.MILLILITER;
 
 @Module
-public class VolumeModule {
+public class VolumeCalculatorModule {
 
     @UnitConverterApplicationScope
     @Provides
