@@ -1,5 +1,6 @@
-package com.zappcompany.unitconverter.volume.di;
+package com.zappcompany.unitconverter.volume.volumedi;
 
+import android.app.Activity;
 import android.content.Context;
 
 import dagger.Module;
@@ -7,14 +8,16 @@ import dagger.Provides;
 
 @Module
 public class ContextModule {
-    Context mContext;
+   private final  Context mContext;
 
-    public ContextModule(Context context) {
+    public ContextModule(Activity context) {
         mContext = context;
     }
+
+
     @UnitConverterApplicationScope
     @Provides
     public Context getContext() {
-        return mContext.getApplicationContext();
+        return mContext;
     }
 }

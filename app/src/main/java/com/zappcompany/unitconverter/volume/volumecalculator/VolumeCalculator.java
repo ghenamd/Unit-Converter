@@ -1,12 +1,12 @@
-package com.zappcompany.unitconverter.volume;
+package com.zappcompany.unitconverter.volume.volumecalculator;
 
 
 import com.digidemic.unitof.UnitOf;
 
 import java.text.DecimalFormat;
 
-import static com.zappcompany.unitconverter.volume.constants.VolumeConstants.LITER;
-import static com.zappcompany.unitconverter.volume.constants.VolumeConstants.MILLILITER;
+import static com.zappcompany.unitconverter.volume.volumeconstants.VolumeConstants.LITER;
+import static com.zappcompany.unitconverter.volume.volumeconstants.VolumeConstants.MILLILITER;
 
 public class VolumeCalculator {
 

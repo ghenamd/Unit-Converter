@@ -1,7 +1,7 @@
-package com.zappcompany.unitconverter.volume.di;
+package com.zappcompany.unitconverter.volume.volumedi;
 
-import com.zappcompany.unitconverter.volume.VolumeCalculator;
-import com.zappcompany.unitconverter.volume.textwatcher.CustomVolumeTextWatcher;
+import com.zappcompany.unitconverter.volume.volumecalculator.VolumeCalculator;
+import com.zappcompany.unitconverter.volume.volumetextwatcher.CustomVolumeTextWatcher;
 
 import dagger.Module;
 import dagger.Provides;
@@ -14,4 +14,5 @@ public class CustomVolumeTextWatcherModule {
     public CustomVolumeTextWatcher getCustomTextWatcher( VolumeCalculator calculator){
         return new CustomVolumeTextWatcher(calculator);
     }
+
 }

@@ -1,7 +1,7 @@
-package com.zappcompany.unitconverter.volume.di;
+package com.zappcompany.unitconverter.volume.volumedi;
 
 import com.digidemic.unitof.UnitOf;
-import com.zappcompany.unitconverter.volume.VolumeCalculator;
+import com.zappcompany.unitconverter.volume.volumecalculator.VolumeCalculator;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;
@@ -9,8 +9,8 @@ import java.util.HashMap;
 import dagger.Module;
 import dagger.Provides;
 
-import static com.zappcompany.unitconverter.volume.constants.VolumeConstants.LITER;
-import static com.zappcompany.unitconverter.volume.constants.VolumeConstants.MILLILITER;
+import static com.zappcompany.unitconverter.volume.volumeconstants.VolumeConstants.LITER;
+import static com.zappcompany.unitconverter.volume.volumeconstants.VolumeConstants.MILLILITER;
 
 @Module
 public class VolumeCalculatorModule {

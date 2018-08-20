@@ -22,7 +22,7 @@
         <item name="android:layout_weight">3</item>
         <item name="android:layout_gravity">start</item>
         <item name="android:textAlignment">viewEnd</item>
-        <item name="android:inputType">numberDecimal</item>
+        <item name="android:inputType">number|numberDecimal</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
 
     </style>

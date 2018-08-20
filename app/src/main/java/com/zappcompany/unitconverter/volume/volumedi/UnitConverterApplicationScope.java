@@ -1,4 +1,4 @@
-package com.zappcompany.unitconverter.volume.di;
+package com.zappcompany.unitconverter.volume.volumedi;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
