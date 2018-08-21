@@ -22,6 +22,7 @@ public class CustomVolumeTextWatcher {
 
     public void setValuesPerEditText(final HashMap<String, EditText> mHashMap) {
         for (final EditText editText : mHashMap.values()) {
+
             editText.addTextChangedListener(new TextWatcher() {
                 @Override
                 public void beforeTextChanged(CharSequence s, int start, int count, int after) {

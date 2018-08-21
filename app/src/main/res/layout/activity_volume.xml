@@ -10,6 +10,8 @@
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
         android:layout_width="match_parent"
         android:orientation="vertical">
 
@@ -18,7 +20,7 @@
             android:layout_width="match_parent"
             android:orientation="horizontal">
 
-            <EditText
+            <com.zappcompany.unitconverter.customview.CustomEditText
                 style="@style/customEditText"
                 android:id="@+id/edit_text_milliliter"
                 />
@@ -32,7 +34,7 @@
             android:layout_width="match_parent"
             android:orientation="horizontal">
 
-            <EditText
+            <com.zappcompany.unitconverter.customview.CustomEditText
                 style="@style/customEditText"
                 android:id="@+id/edit_text_liter" />
 
