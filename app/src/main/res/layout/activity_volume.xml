@@ -18,11 +18,11 @@
         <LinearLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:orientation="horizontal">
-
-            <com.zappcompany.unitconverter.customview.CustomEditText
-                style="@style/customEditText"
-                android:id="@+id/edit_text_milliliter"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:id="@+id/text_milliliter"
+              style="@style/text_view_style"
                 />
             <TextView
                 style="@style/activityTextView"
@@ -33,10 +33,9 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="horizontal">
-
-            <com.zappcompany.unitconverter.customview.CustomEditText
-                style="@style/customEditText"
-                android:id="@+id/edit_text_liter" />
+            <TextView
+                android:id="@+id/text_liter"
+               style="@style/text_view_style"/>
 
             <TextView
                 style="@style/activityTextView"

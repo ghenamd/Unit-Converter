@@ -13,4 +13,5 @@
     <string name="volume">Volume</string>
     <string name="milliliter">Milliliter</string>
     <string name="liter">Liter</string>
+    <string name="_0_00">0.00</string>
 </resources>
