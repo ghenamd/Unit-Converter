@@ -20,6 +20,6 @@
 ![alt text](https://lh3.googleusercontent.com/9EgMdrSx0BNBymPy-mabmhmxboa_NP8Pau6KmPigKQ7zSkyUJZ2B-tBsQHoJfL-MTTA=w1366-h635-rw)![alt text](https://lh3.googleusercontent.com/MnnYxmH6B0wj8DzSY8MtxcERAsBGQ6VBwOHTSDlUb7QYwYHDRtY9_RRwxVSP150LWA=w1366-h635-rw)
 
 
-###### Libraries used to build this app: ButterKnife, Dagger 2, UnitOf(Java library for unit conversion) and MVP design pattern.
+##### Libraries used to build this app: ButterKnife, Dagger 2, UnitOf(Java library for unit conversion) with MVP design pattern.
 
 The App is available on Google Play Store [Unit Converter](https://play.google.com/store/apps/details?id=com.zappcompany.unitconverter).
